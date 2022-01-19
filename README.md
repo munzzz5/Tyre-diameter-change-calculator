@@ -25,4 +25,4 @@ To figure the outside diameter of a tyre, take the sidewall height and multiply 
 
 See if change is greater than 2%
 
-![Tyre Image]()
+![Tyre Image](https://github.com/munzzz5/Tyre-diameter-change-calculator/blob/master/tyre.png)
