@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/tyrestoreLogo"
+        android:layout_width="237dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="84dp"
+        android:contentDescription="@string/logo_of_tyrestore"
+        android:fadingEdge="horizontal|vertical"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotyrestore"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/title_of_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/title_1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tyrestoreLogo" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="367dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/description_2"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#1976D2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_of_app" />
+
+    <TextView
+        android:id="@+id/description_2"
+        android:layout_width="359dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/description_1"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TableLayout
+        android:layout_width="386dp"
+        android:layout_height="375dp"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_2">
+
+        <TableRow
+
+            android:background="@color/heading">
+
+            <TextView
+                android:id="@+id/oWidth"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Old Width"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/oProfile"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Old Profile Height"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/oDiameter"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Old Diameter"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/oldWidth"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Enter mm"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/oldProfile"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Enter %"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/oldDiameter"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Enter Inches"
+                android:textAlignment="center" />
+
+
+        </TableRow>
+
+        <TableRow android:background="@color/heading">
+
+            <TextView
+                android:id="@+id/nWidth"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="New Width"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/nProfile"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="New Profile Height"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/nDiameter"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="New Diameter"
+                android:textAlignment="center" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/newWidth"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Enter mm"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/newProfile"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Enter %"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/newDiameter"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Enter Inches"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow android:background="@color/result">
+
+            <TextView
+                android:id="@+id/oldTyreTitle"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Old Diameter"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/newTyreTitle"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="New Diameter"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/oldTyre"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorPrimary"
+
+                />
+
+            <TextView
+                android:id="@+id/newTyre"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/result">
+
+            <TextView
+                android:id="@+id/OldValue"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Difference in %"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/NewValue"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Difference in mm"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/percentResult"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorPrimary"
+
+                />
+
+            <TextView
+                android:id="@+id/mmResult"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="?android:attr/textColorPrimary" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/submitAnswer"
+                android:layout_weight="1"
+
+                android:text="Answer" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

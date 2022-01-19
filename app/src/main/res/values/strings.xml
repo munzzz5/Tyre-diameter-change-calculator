@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TyrestoreSizer</string>
+    <string name="logo_of_tyrestore">logo_of_tyrestore</string>
+    <string name="description_2">Select the dimensions of your tyres to determine the overall diameter</string>
+    <string name="description_1">Correct matching of overall diameter when changing wheel and tyre sizes is necessary to ensure ride height and gearing remain same</string>
+    <string name="title_1">Tyre Conversion Chart</string>
+</resources>
